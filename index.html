@@ -79,41 +79,61 @@
         <div class="col-sm-6 col-md-4 storymap-story">
             <section data-scene="overview" data-background="assets/tide.mp4">
                 <div class="fullscreen text-center">
-                    <h1>Ocean Acidification and the Shellfish Industry in the Pacific Northwest</h1>
+                    <h1>Ocean Acidification and the Shellfish Industry</h1>
                     <h1>
-                        <small style="color: rgba(255,255,255,0.95)"> Assessing the vulnerability of regional shellfish stakeholders to the growing threat of ocean acidification.
+                        <small style="color: rgba(255,255,255,0.95)">Paving adaptation pathways in the Pacific Northwest
                         </small>
                     </h1>
                 </div>
             </section>
             <section data-scene="economics">
-                <h2>Importance</h2>
-                <p>Shellfish in the Pacific Northwest: history and economic importance</p>
+                <h2>Economic and Ecological Importance</h2>
+                <p>Shellfish form the backbone of a $280 million annual industry in the Pacific Northwest - across a
+                    chain of suppliers, hatcheries, growers, processors, distributors, and vendors.</p>
                 <img src="img/flats.png" class="img-responsive" alt="responsive image"
                      alt-text="Shellfish Farm">
+                <br>
+                <p>Many indigenous peoples in the Pacific Northwest also place a special economic and cultural value on
+                shellfish, and have done so for millennia.</p>
+                <p>Shellfish also provide critical ecosystem services by filtering water and improving its quality. A
+                single shellfish can filter up to 50 gallons of water every day!</p>
             </section>
 
             <section data-scene="oa">
-                <h2>Acidification</h2>
-                <p>Anthropogenic change: CO2 emissions are acidifying the oceans</p>
+                <h2>Ocean Acidification</h2>
                 <video controls width="500px" class="embedded-photo">
                     <source src="assets/oa.mp4" />
                 </video>
-
                 <p><a href="https://www.youtube.com/watch?v=7h08ok3hFSs">Video</a> from YouTube by Oregon State University</p>
+                <br>
+                <p>The ocean naturally absorbs carbon dioxide from the atmosphere - like a giant "carbon sink". Human
+                    activity has drastically increased the amount of CO2 in the atmosphere through the combustion of
+                    fossil fuels, and this has resulted in much more dissolved CO2 in the ocean. This change in the
+                    ocean's chemistry lowers pH and leads to a more acidified ocean.</p>
             </section>
 
             <section data-scene="shellfish">
-                <h2>Impacts</h2>
-                <p>Ocean acidification impacts shellfish growth and development</p>
+                <h2>Impacts to Shellfish</h2>
+                <p>Ocean acidification (OA) affects shellfish like oysters and mussels during critical growth and
+                    development stages. Shell-forming species rely on carbonate to build their shells, and this ability
+                is hindered in acidified water because a lot more carbonate is bound to extra H+ ions.</p>
                 <img src="img/oyster.png" class="img-responsive" alt="responsive image"
                      alt-text="oyster">
+                <br>
+                <p>The image below shows damage to oyster larvae from acidified water (right) compared to healthy larvae
+                 (left).</p>
+                <img src="assets/larvae.png" class="img-responsive" alt="responsive image"
+                     alt-text="oyster larvae">
+                <p>Micrograph by Oregon State University</p>
             </section>
 
             <section data-scene="future">
                 <h2>Looking Ahead</h2>
-                <p>Industry at risk, needing adaptation strategies. What does the future hold?</p>
-                <h3>Forecasts:</h3>
+                <p>OA is occurring with greater intensity in the Pacific Northwest than anywhere else in the world. This
+                     poses a threat to ecosystems and economies that depend on them. The region is both a harbinger of
+                    things to come for other coastlines that will ultimately face OA exposure, and a laboratory for
+                innovation on successful adaptation investments and strategies.</p>
+                <h3>Forecasts</h3><h5>(from <a href="https://www.nnvl.noaa.gov/view/globaldata.html">NOAA View Data Exploration Tool</a>)</h5>
                 <p>pH (acidity)</p>
                 <video controls width="500px" class="embedded-photo">
                     <source src="assets/ph.mp4" /></video>
@@ -124,7 +144,15 @@
             </section>
             <section data-scene="collaboration">
                 <h2>Collaboration</h2>
-                <p>RVA-OA project, collaboration, forecasting</p>
+                <p>Researchers and OA stakeholders at Oregon State University and the Pacific Shellfish Institute have
+                partnered with NOAA to identify pathways for OA adaptation.</p>
+                <h4>The team will:</h4>
+                <h5>1) Develop interactive mapping tools to enable public understanding of current and future OA exposure</h5>
+                <h5>2) Build bioeconomic models of shellfish aquaculture firms facing OA risk</h5>
+                <h5>3) Identify technological, institutional, legislative, financial, and cultural barriers to OA adaptation</h5>
+                <h5>4) Identify feasible long-term pathways to OA adaptation</h5>
+                <h5>5) Evaluate the value of those pathways</h5>
+                <h5>6) Develop behavioral models to predict the likelihood of users adopting feasible OA adaptation pathways</h5>
                 <img src="img/osu_logo.png" class="img-responsive" alt="responsive image"
                      alt-text="Oregon State University logo">
                 <img src="img/pacshell-logo.png" class="img-responsive" alt="responsive image"
@@ -175,7 +203,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">About</h4>
+                    <h5 class="modal-title">About</h5>
                 </div>
                 <div class="modal-body">
                     <p>This story map describes the objectives of a research project at Oregon State University aimed at
@@ -224,11 +252,11 @@
     function setColor(GROWER_CNT) {
         //Tenary operation: condition ? valueIfTrue : valueIfFalse
         // condition ? value1 : value2
-        return GROWER_CNT > 60 ? '#b30000' :
-            GROWER_CNT > 59 ? '#e34a33' :
-                GROWER_CNT > 39 ? '#fc8d59' :
-                    GROWER_CNT > 19 ? '#fdcc8a' :
-                        '#fef0d9';
+        return GROWER_CNT > 60 ? '#a08060' :
+            GROWER_CNT > 59 ? '#b89e85' :
+                GROWER_CNT > 39 ? '#d0beac' :
+                    GROWER_CNT > 19 ? '#e8ded5' :
+                        '#ffffff';
     }
 
     // Set style function that sets fill color property equal to grower count
@@ -361,7 +389,7 @@
         }
     });
 
-    var collaboration_circle_legend = '<i class=""><svg height="16" width="16"> <circle cx="8" cy="8" r="6" stroke="white" stroke-width="1" fill="red" fillOpacity="0.4" /> </svg></i><p><b>Research Partners</b></p>';
+    var collaboration_circle_legend = '<i class=""><svg height="16" width="16"> <circle cx="8" cy="8" r="6" stroke="white" stroke-width="1" fill="a0a0c0" fillOpacity="0.4" /> </svg></i><p><b>Research Partners</b></p>';
 
     //////////////////////////////////////////////////////////////////////////
     // Scene 6: circleMarker in glow effects
@@ -417,7 +445,7 @@
         economics: {lat: 46.688927, lng: -123.5, zoom: 7, name: 'Economic Importance', layers: ['growers_circle2', 'darkLayer']},
         oa: {lat: 46.688927, lng: -123.5, zoom: 7, name: 'Ocean Acidification', layers: ['shellfish', 'ecoregions_choropleth']},
         shellfish: {lat: 45.408, lng: -123.947140, zoom: 14, name: 'Shellfish Impacts', layers: ['satellite']},
-        future: {lat: 55, lng: -138, zoom: 4, name: 'Looking Ahead', layers: ['ecoregions', 'growers_color', 'ESRI']},
+        future: {lat: 55, lng: -138, zoom: 4, name: 'Looking Ahead', layers: ['ecoregions', 'growers_circle2', 'ESRI']},
         collaboration: {lat: 47, lng: -111, zoom: 5, name: 'Collaboration', layers: ['collaboration_circle', 'cartodb_light']},
         end: {lat: 44.0000000, lng: -123.5000000, zoom: 7, name: 'The End'}
     };
@@ -426,7 +454,7 @@
         scenes: scenes,
         layers: layers,
         baselayer: layers.shellfish,
-        legend: true, // if you do not want a legend feature, you can simply not define the createLegend function.
+        legend: false, // if you do not want a legend feature, you can simply not define the createLegend function.
         credits: "",
         loader: true,
         scalebar: false,
