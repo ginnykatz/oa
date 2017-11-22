@@ -343,3 +343,8 @@ nav li a,
     color: rgba(0, 117, 255, 0.6);
     text-decoration: none;
 }
+
+.thanks {
+    color: #a0a0c0;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}

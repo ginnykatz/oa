@@ -165,12 +165,7 @@
             <section data-scene="end" data-background="img/shell.jpg">
                 <div class="fullscreen text-center">
                     <br/>
-                    <h1 class="">Thanks for watching!!!</h1>
-                    <h1>
-                        <small style="color: rgba(255,255,255,0.95)">Download Storymap.js from
-                            http://github.com/jakobzhao/storymap
-                        </small>
-                    </h1>
+                    <h1 class="thanks">Thank you</h1>
                 </div>
             </section>
 
@@ -213,17 +208,18 @@
                         storymap plugin for leaflet at <a>http://atlefren.github.io/storymap/</a>, and its functionality
                         relies on both leaflet and Bootstrap.</p>
                     <p><b>storymap.js</b> | Released Date: 02/20/2017 | Version: 2.3 | MIT License</p>
-                    <p><b>Author: Bo Zhao</b> | College of Earth, Ocean, and Atmospheric Sciences | Oregon State University
+                    <p><b>Author: Brian Katz</b> | College of Earth, Ocean, and Atmospheric Sciences | Oregon State University
                     </p>
                     <p>glow effect: https://adventuresinmapping.com/2016/10/17/firefly-cartography/</p>
                     <p>The <a href="https://www.youtube.com/watch?v=7h08ok3hFSs">video</a> on the Ocean Acidification page
                         was clipped from Youtube.</p>
+                    <p>The shellfish grower data was obtained from the Pacific Shellfish Growers Association (PCSGA) <a href="https://pcsga.org/search-our-growers/">website</a>.</p>
                     <p>The pH and aragonite saturation forecast videos were sourced from <a href="https://www.nnvl.noaa.gov/view/globaldata.html">NOAA View Data Exploration Tool</a>.</p>
                     <p>The favicon image was acquired from <a>https://pixabay.com/p-576545/?no_redirect</a>.</p>
+                    <p>Front page video by: Brian Katz</p>
                     <p>End scene photo by: Ginny Katz</p>
                     <p>This story map uses geospatial data from mapbox, Google Earth Engine, ESRI Map, Open Street Maps
                         and Oregon Explorer.</p>
-                    <p><b>Created by: Brian Katz</b> | College of Earth, Ocean, and Atmospheric Sciences | Oregon State University</p>
                 </div>
             </div>
         </div>
@@ -467,11 +463,11 @@
             // create a map in the "map" div, set the view to a given place and zoom
             var map = L.map($(".storymap-map")[0], {zoomControl: false, scrollWheelZoom: false}).setView([55, -138], 4);
 
-            //add an miniglobe
-           // new L.Control.GlobeMiniMap({
-           //     marker: 'red',
-          //      position: 'bottomright'
-          //  }).addTo(map);
+//         //   add an miniglobe
+//            new L.Control.GlobeMiniMap({
+//                marker: 'red',
+//                position: 'bottomright'
+//            }).addTo(map);
 
 
             return map;
